@@ -1,6 +1,5 @@
 <app-header></app-header>
-<div class="b-example-divider"></div>
-<section>
+<section id="landingHome">
   <div class="bg-dark text-secondary px-4 py-5 text-center">
     <h1 class="display-5 fw-bold text-white pb-5 m-0">Baljinder Singh</h1>
     <div class="overflow-hidden">
@@ -18,10 +17,10 @@
   </div>
 </section>
 <div class="b-example-divider"></div>
-<section>
+<section id="aboutMe">
   <div class="bg-dark text-secondary px-4 py-5 text-center">
     <div class="py-5">
-      <h1 class="display-5 fw-bold text-white">About Me</h1>
+      <h1 class="display-5 fw-bold text-info">About Me</h1>
       <div class="col-lg-6 mx-auto">
         <p class="fs-5 mb-4">
           Passionate about crafting seamless user experiences and bringing
@@ -33,7 +32,7 @@
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <button
             type="button"
-            class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+            class="btn btn-outline-info btn-lg px-4 me-sm-3"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
           >
@@ -45,22 +44,32 @@
   </div>
 </section>
 <div class="b-example-divider"></div>
-<section>
+<section id="contactMe">
   <div class="bg-dark">
     <div class="container col-xl-10 col-xxl-8 px-4 py-5">
       <div class="row align-items-center g-lg-5 py-5">
         <div class="col-lg-7 text-center text-lg-start">
           <h1 class="display-4 fw-bold lh-1 mb-3 text-white">
-            Vertically centered hero sign-up form
+            <p class="display-3 text-info">
+              <i>Contact us for...</i>
+            </p>
+            <b>Business Enquires.</b>
           </h1>
           <p class="col-lg-10 fs-4 text-secondary">
-            Below is an example form built entirely with Bootstrap’s form
-            controls. Each required form group has a validation state that can
-            be triggered by attempting to submit the form without completing it.
+            We need your email to reach you back...
           </p>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
           <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputName"
+                placeholder="john doe"
+              />
+              <label for="floatingInputName">Your Name</label>
+            </div>
             <div class="form-floating mb-3">
               <input
                 type="email"
@@ -70,26 +79,12 @@
               />
               <label for="floatingInput">Email address</label>
             </div>
-            <div class="form-floating mb-3">
-              <input
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="Password"
-              />
-              <label for="floatingPassword">Password</label>
-            </div>
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me" /> Remember me
-              </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">
-              Sign up
+            <button class="w-100 btn btn-lg btn-outline-info" type="submit">
+              Submit
             </button>
             <hr class="my-4" />
             <small class="text-body-secondary"
-              >By clicking Sign up, you agree to the terms of use.</small
+              >Thanks for reaching out! we'll get back to you at our earliest convenience.</small
             >
           </form>
         </div>
@@ -97,7 +92,6 @@
     </div>
   </div>
 </section>
-<div class="b-example-divider"></div>
 <app-footer></app-footer>
 <!-- Modal -->
 <div
