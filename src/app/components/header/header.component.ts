@@ -5,8 +5,18 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-
+  navLinks = {
+    home: {
+      title: 'Home',
+    },
+    about: {
+      title: 'About',
+    },
+    contact: {
+      title: 'Contact',
+    },
+  };
 }

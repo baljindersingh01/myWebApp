@@ -1,7 +1,7 @@
 <app-header></app-header>
 <section id="landingHome">
   <div class="bg-dark text-secondary px-4 py-5 text-center">
-    <h1 class="display-5 fw-bold text-white pb-5 m-0">Baljinder Singh</h1>
+    <h1 class="display-5 fw-bold text-white pb-5 m-0">{{ landingName }}</h1>
     <div class="overflow-hidden">
       <div class="container px-5">
         <img
@@ -20,14 +20,10 @@
 <section id="aboutMe">
   <div class="bg-dark text-secondary px-4 py-5 text-center">
     <div class="py-5">
-      <h1 class="display-5 fw-bold text-info">About Me</h1>
+      <h1 class="display-5 fw-bold text-info">{{ aboutMe.title }}</h1>
       <div class="col-lg-6 mx-auto">
         <p class="fs-5 mb-4">
-          Passionate about crafting seamless user experiences and bringing
-          designs to life, I am a Junior Frontend Angular Developer with a keen
-          eye for detail and a love for clean, efficient code. Armed with a
-          solid foundation in HTML, CSS, and JavaScript, I have delved into the
-          Angular framework to build dynamic and responsive web applications.
+          {{ aboutMe.description }}
         </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <button
@@ -36,7 +32,7 @@
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
           >
-            See More
+            {{ aboutMe.seeMoreBtn }}
           </button>
         </div>
       </div>
@@ -51,12 +47,12 @@
         <div class="col-lg-7 text-center text-lg-start">
           <h1 class="display-4 fw-bold lh-1 mb-3 text-white">
             <p class="display-3 text-info">
-              <i>Contact us for...</i>
+              <i>{{contactMe.title1}}</i>
             </p>
-            <b>Business Enquires.</b>
+            <b>{{contactMe.title2}}</b>
           </h1>
           <p class="col-lg-10 fs-4 text-secondary">
-            We need your email to reach you back...
+            {{contactMe.title3}}
           </p>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
@@ -68,7 +64,7 @@
                 id="floatingInputName"
                 placeholder="john doe"
               />
-              <label for="floatingInputName">Your Name</label>
+              <label for="floatingInputName">{{contactMe.formControlText.nameLabel}}</label>
             </div>
             <div class="form-floating mb-3">
               <input
@@ -77,14 +73,14 @@
                 id="floatingInput"
                 placeholder="name@example.com"
               />
-              <label for="floatingInput">Email address</label>
+              <label for="floatingInput">{{contactMe.formControlText.emailLabel}}</label>
             </div>
             <button class="w-100 btn btn-lg btn-outline-info" type="submit">
-              Submit
+              {{contactMe.formControlText.submitText}}
             </button>
             <hr class="my-4" />
             <small class="text-body-secondary"
-              >Thanks for reaching out! we'll get back to you at our earliest convenience.</small
+              >{{contactMe.formControlText.miniDescription}}</small
             >
           </form>
         </div>
@@ -107,7 +103,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="staticBackdropLabel">
-          More About Me.
+          {{ aboutMe.moreAboutMe.title }}
         </h1>
         <button
           type="button"
@@ -118,28 +114,26 @@
       </div>
       <div class="modal-body">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">🚀 Key Skills:</li>
           <li class="list-group-item">
-            Angular: Proficient in creating modular, reusable components and
-            implementing two-way data binding for a smoother user interaction.
+            {{ aboutMe.moreAboutMe.keySkills.title }}
           </li>
           <li class="list-group-item">
-            HTML/CSS: Experienced in crafting pixel-perfect layouts and styles
-            to enhance user interfaces.
+            {{ aboutMe.moreAboutMe.keySkills.angular }}
           </li>
           <li class="list-group-item">
-            JavaScript: Familiar with ES6+ features and adept at leveraging
-            JavaScript to enhance website interactivity.
+            {{ aboutMe.moreAboutMe.keySkills.htmlCss }}
           </li>
           <li class="list-group-item">
-            Version Control: Skilled in using Git for collaborative development
-            and version control.
+            {{ aboutMe.moreAboutMe.keySkills.javaScript }}
+          </li>
+          <li class="list-group-item">
+            {{ aboutMe.moreAboutMe.keySkills.versionControl }}
           </li>
         </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Close
+          {{ aboutMe.moreAboutMe.closeBtn }}
         </button>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <footer
     class="d-flex flex-wrap justify-content-between align-items-center my-4"
   >
-    <p class="col-md-4 mb-0 text-info">© 2023 Baljinder Singh, Inc</p>
+    <p class="col-md-4 mb-0 text-info">{{ copyrightText }}</p>
     <a
       href="/"
       class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -14,26 +14,26 @@
     <ul class="nav col-md-4 justify-content-end">
       <li class="nav-item">
         <a
-          href="https://www.linkedin.com/in/baljindersingh01/"
+          href="{{ socialMediaLinks.linkedin.link }}"
           target="_blank"
           class="nav-link px-2 text-info"
-          >Linkedin</a
+          >{{ socialMediaLinks.linkedin.title }}</a
         >
       </li>
       <li class="nav-item">
         <a
-          href="https://www.instagram.com/iprinceblike/"
+          href="{{ socialMediaLinks.youtube.link }}"
           target="_blank"
           class="nav-link px-2 text-info"
-          >Instagram</a
+          >{{ socialMediaLinks.youtube.title }}</a
         >
       </li>
       <li class="nav-item">
         <a
-          href="https://www.youtube.com/princeblike"
+          href="{{ socialMediaLinks.instagram.link }}"
           target="_blank"
           class="nav-link px-2 text-info"
-          >Youtube</a
+          >{{ socialMediaLinks.instagram.title }}</a
         >
       </li>
     </ul>
