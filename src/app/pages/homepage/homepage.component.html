@@ -2,15 +2,15 @@
 <div class="b-example-divider"></div>
 <section>
   <div class="bg-dark text-secondary px-4 py-5 text-center">
-    <h1 class="display-5 fw-bold text-white">Baljinder Singh</h1>
-    <div class="overflow-hidden" style="max-height: 30vh">
+    <h1 class="display-5 fw-bold text-white pb-5 m-0">Baljinder Singh</h1>
+    <div class="overflow-hidden">
       <div class="container px-5">
         <img
-          src="https://images.pexels.com/photos/4474930/pexels-photo-4474930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="/assets/images/avatar.jpeg"
           class="img-fluid border rounded-3 shadow-lg mb-4"
           alt="Example image"
           width="700"
-          height="500"
+          height="224"
           loading="lazy"
         />
       </div>
@@ -34,11 +34,10 @@
           <button
             type="button"
             class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
           >
-            Custom button
-          </button>
-          <button type="button" class="btn btn-outline-light btn-lg px-4">
-            Secondary
+            See More
           </button>
         </div>
       </div>
@@ -100,3 +99,55 @@
 </section>
 <div class="b-example-divider"></div>
 <app-footer></app-footer>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+          More About Me.
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">🚀 Key Skills:</li>
+          <li class="list-group-item">
+            Angular: Proficient in creating modular, reusable components and
+            implementing two-way data binding for a smoother user interaction.
+          </li>
+          <li class="list-group-item">
+            HTML/CSS: Experienced in crafting pixel-perfect layouts and styles
+            to enhance user interfaces.
+          </li>
+          <li class="list-group-item">
+            JavaScript: Familiar with ES6+ features and adept at leveraging
+            JavaScript to enhance website interactivity.
+          </li>
+          <li class="list-group-item">
+            Version Control: Skilled in using Git for collaborative development
+            and version control.
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
