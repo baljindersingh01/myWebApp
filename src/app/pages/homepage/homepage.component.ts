@@ -14,7 +14,7 @@ export class HomepageComponent {
   aboutMe = {
     title: 'About Me',
     description: `Passionate about crafting seamless user experiences and bringing
-    designs to life, I am a Junior Frontend Angular Developer with a keen
+    designs to life, I am a Frontend Angular Developer with a keen
     eye for detail and a love for clean, efficient code. Armed with a
     solid foundation in HTML, CSS, and JavaScript, I have delved into the
     Angular framework to build dynamic and responsive web applications.`,
